@@ -109,14 +109,7 @@ if __name__=="__main__":
     plt.title("The Correct Result")
     plt.show()
 
-    #for i in range(len(K)):
-     #   (centroids, labels) = Ng_algorithm(data, K[i], sigma)
-      #  accuracy_array[i] = np.sum(labels == data_labels)/float(num_samples)
-    #plt.plot(K, accuracy_array,"-o")
-    #plt.title(r"Accuracy curve($\sigma$ = 1)")
-    #plt.xlabel("k-value")
-    #plt.ylabel("Accuracy")
-    #plt.show()
+
     (centroids, labels) = ng_algorithm(data, K, sigma)
     draw(data, labels)
     #print "The centroids of cluster are:\n",centroids
